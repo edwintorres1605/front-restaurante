@@ -1,19 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+
+/* Provisional */
+import Logo from './components/atoms/Logo/Logo';
+import Button from './components/atoms/Button/Button';
+import Icon from './components/atoms/Icon/Icon';
 
 function App() {
   return (
     <div>
       {/* header section starts      */}
       <header>
-        <a href="#" className="logo"><i className="fas fa-utensils" />resto.</a>
+        <Logo ><i className="fas fa-utensils" />resto.</Logo>
         <nav className="navbar">
-          <a className="active" href="#home">home</a>
-          <a href="#dishes">dishes</a>
-          <a href="#about">about</a>
-          <a href="#menu">menu</a>
-          <a href="#review">review</a>
-          <a href="#order">order</a>
+          <Button type="btn-nav">home</Button>
+          <Button type="btn-nav">dishes</Button>
+          <Button type="btn-nav">about</Button>
+          <Button type="btn-nav">menu</Button>
+          <Button type="btn-nav">review</Button>
+          <Button type="btn-nav">order</Button>
         </nav>
         <div className="icons">
           <i className="fas fa-bars" id="menu-bars" />
@@ -38,7 +42,7 @@ function App() {
                 <span>our special dish</span>
                 <h3>spicy noodles</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                <a href="#" className="btn">order now</a>
+                <Button type="btn-body">order now</Button>
               </div>
               <div className="image">
                 <img src="images/home-img-1.png" alt />
@@ -49,7 +53,7 @@ function App() {
                 <span>our special dish</span>
                 <h3>fried chicken</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                <a href="#" className="btn">order now</a>
+                <Button type="btn-body">order now</Button>
               </div>
               <div className="image">
                 <img src="images/home-img-2.png" alt />
@@ -60,7 +64,7 @@ function App() {
                 <span>our special dish</span>
                 <h3>hot pizza</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                <a href="#" className="btn">order now</a>
+                <Button type="btn-body">order now</Button>
               </div>
               <div className="image">
                 <img src="images/home-img-3.png" alt />
@@ -89,7 +93,7 @@ function App() {
               <i className="fas fa-star-half-alt" />
             </div>
             <span>$15.99</span>
-            <a href="#" className="btn">add to cart</a>
+            <Button type="btn-body">add to cart</Button>
           </div>
           <div className="box">
             <a href="#" className="fas fa-heart" />
@@ -104,7 +108,7 @@ function App() {
               <i className="fas fa-star-half-alt" />
             </div>
             <span>$15.99</span>
-            <a href="#" className="btn">add to cart</a>
+            <Button type="btn-body">add to cart</Button>
           </div>
           <div className="box">
             <a href="#" className="fas fa-heart" />
@@ -119,7 +123,7 @@ function App() {
               <i className="fas fa-star-half-alt" />
             </div>
             <span>$15.99</span>
-            <a href="#" className="btn">add to cart</a>
+            <Button type="btn-body">add to cart</Button>
           </div>
           <div className="box">
             <a href="#" className="fas fa-heart" />
@@ -134,7 +138,7 @@ function App() {
               <i className="fas fa-star-half-alt" />
             </div>
             <span>$15.99</span>
-            <a href="#" className="btn">add to cart</a>
+            <Button type="btn-body">add to cart</Button>
           </div>
           <div className="box">
             <a href="#" className="fas fa-heart" />
@@ -149,7 +153,7 @@ function App() {
               <i className="fas fa-star-half-alt" />
             </div>
             <span>$15.99</span>
-            <a href="#" className="btn">add to cart</a>
+            <Button type="btn-body">add to cart</Button>
           </div>
           <div className="box">
             <a href="#" className="fas fa-heart" />
@@ -164,7 +168,7 @@ function App() {
               <i className="fas fa-star-half-alt" />
             </div>
             <span>$15.99</span>
-            <a href="#" className="btn">add to cart</a>
+            <Button type="btn-body">add to cart</Button>
           </div>
         </div>
       </section>
@@ -195,7 +199,7 @@ function App() {
                 <span>24/7 service</span>
               </div>
             </div>
-            <a href="#" className="btn">learn more</a>
+            <Button type="btn-body">learn more</Button>
           </div>
         </div>
       </section>
@@ -220,7 +224,7 @@ function App() {
               </div>
               <h3>delicious food</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-              <a href="#" className="btn">add to cart</a>
+              <Button type="btn-body">add to cart</Button>
               <span className="price">$12.99</span>
             </div>
           </div>
@@ -239,7 +243,7 @@ function App() {
               </div>
               <h3>delicious food</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-              <a href="#" className="btn">add to cart</a>
+              <Button type="btn-body">add to cart</Button>
               <span className="price">$12.99</span>
             </div>
           </div>
@@ -258,7 +262,7 @@ function App() {
               </div>
               <h3>delicious food</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-              <a href="#" className="btn">add to cart</a>
+              <Button type="btn-body">add to cart</Button>
               <span className="price">$12.99</span>
             </div>
           </div>
@@ -277,7 +281,7 @@ function App() {
               </div>
               <h3>delicious food</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-              <a href="#" className="btn">add to cart</a>
+              <Button type="btn-body">add to cart</Button>
               <span className="price">$12.99</span>
             </div>
           </div>
@@ -296,7 +300,7 @@ function App() {
               </div>
               <h3>delicious food</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-              <a href="#" className="btn">add to cart</a>
+              <Button type="btn-body">add to cart</Button>
               <span className="price">$12.99</span>
             </div>
           </div>
@@ -315,7 +319,7 @@ function App() {
               </div>
               <h3>delicious food</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-              <a href="#" className="btn">add to cart</a>
+              <Button type="btn-body">add to cart</Button>
               <span className="price">$12.99</span>
             </div>
           </div>
@@ -334,7 +338,7 @@ function App() {
               </div>
               <h3>delicious food</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-              <a href="#" className="btn">add to cart</a>
+              <Button type="btn-body">add to cart</Button>
               <span className="price">$12.99</span>
             </div>
           </div>
@@ -353,7 +357,7 @@ function App() {
               </div>
               <h3>delicious food</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-              <a href="#" className="btn">add to cart</a>
+              <Button type="btn-body">add to cart</Button>
               <span className="price">$12.99</span>
             </div>
           </div>
@@ -372,7 +376,7 @@ function App() {
               </div>
               <h3>delicious food</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-              <a href="#" className="btn">add to cart</a>
+              <Button type="btn-body">add to cart</Button>
               <span className="price">$12.99</span>
             </div>
           </div>
