@@ -2,7 +2,7 @@ import React from 'react';
 import { Section } from '../components/Commons';
 import Special from '../components/Special';
 import Dishes from "../components/Dishes";
-import About from "./About";
+import About from "../components/About";
 import Menu from "./Menu";
 import Review from "./Review";
 

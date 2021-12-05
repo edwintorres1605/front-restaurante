@@ -1,6 +1,20 @@
 import React from 'react';
-import { SubHeading, Heading, Button } from '../Commons';
-import { Box, BoxContainer, Dish, Eye, Heart, Text, Stars, Icon, Price } from './BoxContainer';
+import { 
+    SubHeading, 
+    Heading, 
+    Button 
+} from '../Commons';
+import { 
+    Box, 
+    BoxContainer, 
+    Dish, 
+    Eye, 
+    Heart, 
+    Text, 
+    Stars, 
+    Icon, 
+    Price 
+} from './BoxContainer';
 import dish1 from '../../images/dish-1.png';
 import dish2 from '../../images/dish-2.png';
 import dish3 from '../../images/dish-3.png';
