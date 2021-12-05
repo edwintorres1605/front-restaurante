@@ -54,7 +54,6 @@ const Navbar = () => {
                         smooth={true}
                         duration={300}
                         offset={-55}
-                        onClick={handleMenu}
                         >
                         <Utensils />
                         Resto.

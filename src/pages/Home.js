@@ -3,8 +3,8 @@ import { Section } from '../components/Commons';
 import Special from '../components/Special';
 import Dishes from "../components/Dishes";
 import About from "../components/About";
-import Menu from "./Menu";
-import Review from "./Review";
+import Menu from "../components/Menu";
+import Review from "../components/Review";
 
 const Home = () => {
     return (

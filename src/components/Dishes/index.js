@@ -30,7 +30,7 @@ const Dishes = () => {
             <Heading>Popular Dishes</Heading>
             <BoxContainer>
                 <Box>
-                    <Heart size='' />
+                    <Heart />
                     <Eye />
                     <Dish src={dish1} alt="dish" />
                     <Text>Tasty Food</Text>
