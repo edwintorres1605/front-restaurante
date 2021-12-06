@@ -2,11 +2,11 @@ import { FaQuoteRight } from "react-icons/fa";
 import styled from "styled-components";
 
 export const Container = styled.div`
-
 `;
 
 export const Swiper = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap:1.5rem;
 `;
 
