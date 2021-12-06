@@ -1,3 +1,15 @@
+## Demo
+
+[https://edwintorres1605.github.io/front-restaurante](https://edwintorres1605.github.io/front-restaurante)
+
+
+Al momento de descargar el repositorio deberás ejecutar:
+
+### `npm install`
+
+y así podrás usar las dependencias utilizadas en el proyecto.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
