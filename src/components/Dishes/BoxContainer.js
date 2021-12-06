@@ -68,6 +68,11 @@ export const Eye = styled(FaEye)`
 export const Dish = styled.img`
     height:17rem;
     margin:1rem 0;
+
+    @media (max-width:450px) {
+        height:auto;
+        width: 100%;
+    }
 `;
 
 export const Text = styled.h3`

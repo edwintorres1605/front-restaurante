@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { 
     FaBars, 
@@ -25,11 +25,6 @@ import {
     Close
 } from './NavbarElements';
 
-import Home from "../../pages/Home.js";
-import Favorites from "../../pages/Favorites";
-import Shopping from "../../pages/Shopping";
-import SignIn from "../../pages/SignIn";
-
 const Navbar = () => {    
     const [view, setView] = useState(true);
     const [click, setClick] = useState(false);
@@ -41,10 +36,12 @@ const Navbar = () => {
 
     const handleMenu = () => setClick(!click);
 
+    const closeMenu = () => setClick(false);
+
     const handleSearch = () => setClickSearch(!clickSearch);
 
     return (
-        <Router>
+        <>
             <Header>    
                 {view ? 
                 <>
@@ -54,6 +51,7 @@ const Navbar = () => {
                         smooth={true}
                         duration={300}
                         offset={-55}
+                        onClick={closeMenu}
                         >
                         <Utensils />
                         Resto.
@@ -112,13 +110,7 @@ const Navbar = () => {
                 <SearchLabel for="search-box"><FaSearch onClick={handleSearch} /></SearchLabel>
                 <Close id="close" onClick={handleSearch} />
             </SearchForm>
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/favorites" component={Favorites} />
-                <Route path="/shopping" component={Shopping} />
-                <Route path="/sign-in" component={SignIn} />
-            </Switch>
-        </Router>
+        </>
     );
 };
 
